@@ -122,11 +122,9 @@ var user2 = {
 
 //Code Here
 
+user2.name = "Tyler S. McGinnis";
 
-
-
-
-
+user2.email = "tyler.mcginnis@devmounta.in";
 
 /////////////////////// EXTRA PRACTICE PROBLEMS BELOW ////////////////////
 ////////// MOVE ONTO NEXT SECTION BEFORE WORKING ON THESE ////////////////
