@@ -23,7 +23,6 @@ var me = {
 
 alert(me.name);
 
-
 ////////// PROBLEM 2 //////////
 
 /*
@@ -130,11 +129,6 @@ user2.email = "tyler.mcginnis@devmounta.in";
 ////////// MOVE ONTO NEXT SECTION BEFORE WORKING ON THESE ////////////////
 
 
-
-
-
-
-
 ////////// PROBLEM 5 //////////
 
 /*
@@ -143,7 +137,7 @@ user2.email = "tyler.mcginnis@devmounta.in";
 
 //Code Here
 
-
+var methodCollection = {};
 
 /*
   Now add two methods (functions that are properties on objects) to your methodCollection object. 
@@ -152,7 +146,13 @@ user2.email = "tyler.mcginnis@devmounta.in";
 
 //Code Here
 
+methodCollection.alertHello = function() {
+  alert("hello");
+}
 
+methodCollection.logHello = function() {
+  console.log("hello");
+}
 
 /*
   Now call your alertHello and logHello methods.
@@ -160,7 +160,9 @@ user2.email = "tyler.mcginnis@devmounta.in";
 
 //Code Here
 
+methodCollection.alertHello();
 
+methodCollection.logHello();
 
 ////////// PROBLEM 6 //////////
 
@@ -171,7 +173,13 @@ user2.email = "tyler.mcginnis@devmounta.in";
 
 //Code Here
 
-
+function makePerson(name, birthday, ssn) {
+  return {
+    name,
+    birthday,
+    ssn
+  }
+}
 
 ////////// PROBLEM 7 //////////
 
@@ -182,4 +190,10 @@ user2.email = "tyler.mcginnis@devmounta.in";
 
 //Code Here
 
-
+function makeCard(cardNumber, expirationDate, securityCode) {
+  return {
+    cardNumber,
+    expirationDate,
+    securityCode
+  }
+}
